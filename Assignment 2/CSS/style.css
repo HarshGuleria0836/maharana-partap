@@ -1,0 +1,179 @@
+/* Normalize CSS first, to ensure cross-browser compatibility */
+@import url('normalize.css');
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 15px 92px;
+    padding: 0 0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(234, 255, 255);
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+header {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgb(222, 255, 255);
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+}
+
+#biography {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 40px;
+}
+
+#video-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 40px;
+}
+
+#biography blockquote {
+    flex: 1;
+    margin: 0px 40px;
+    padding: 10px 30px;
+    background-color: rgb(222, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+#biography figure {
+    flex: 1;
+    margin: 0px 40px;
+    padding: 10px 30px;
+    background-color: rgb(222, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+#video-resources .video {
+    flex: 1;
+    margin: 0px 40px;
+    padding: 10px 30px;
+    background-color: rgb(222, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+#video-resources .resources {
+    flex: 1;
+    margin: 0px 40px;
+    padding: 10px 30px;
+    background-color: rgb(222, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+#contact-section {
+    margin: 0px 40px;
+    padding: 10px 30px;
+    background-color: rgb(222, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+#biography blockquote {
+    max-width: 50%;
+}
+
+#biography figure {
+    max-width: 50%;
+}
+
+#video-resources .video {
+    max-width: 70%;
+    height: 400px;
+}
+
+#video-resources .resources {
+    max-width: 30%;
+    height: 250px;
+}
+
+#biography img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#video-resources .video iframe {
+    width: 100%;
+    /* height: auto; */
+    height: 290px;
+}
+
+#links-section {
+    text-align: center;
+}
+
+form label, form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #505050;
+}
+
+@media (max-width: 768px) {
+    #biography, #video-resources {
+        flex-direction: column;
+    }
+
+    #biography blockquote, #biography figure, #video-resources .video, #video-resources .resources {
+        max-width: 100%;
+    }
+
+    #video-resources .video iframe {
+        width: 100%;
+        height: auto;
+    }
+}
